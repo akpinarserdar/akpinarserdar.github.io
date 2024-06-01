@@ -11,9 +11,13 @@
             padding: 0;
             background-color: #f7f7f7;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         .container {
+            flex: 1;
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
@@ -23,7 +27,7 @@
         .header {
             background-color: #0097b2;
             color: white;
-            padding: 40px 20px;
+            padding: 20px;
             border-radius: 0 0 20px 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
@@ -31,11 +35,6 @@
         .header h1 {
             margin: 0;
             font-size: 2.5em;
-        }
-
-        .header p {
-            margin: 10px 0 0;
-            font-size: 1.2em;
         }
 
         .content {
@@ -48,12 +47,23 @@
             line-height: 1.6;
         }
 
+        .content a {
+            display: block;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #0097b2;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
         .footer {
-            margin-top: 40px;
             padding: 20px;
             background-color: #fff;
             border-top: 1px solid #ccc;
-            border-radius: 20px 20px 0 0;
             box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
         }
 
@@ -82,24 +92,6 @@
             color: #0097b2;
             text-decoration: underline;
         }
-
-        .btn-download {
-            display: inline-block;
-            background-color: #0097b2;
-            color: white;
-            padding: 15px 30px;
-            text-align: center;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 1.2em;
-            margin-top: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: background-color 0.3s;
-        }
-
-        .btn-download:hover {
-            background-color: #007a91;
-        }
     </style>
 </head>
 <body>
@@ -107,17 +99,11 @@
 <div class="container">
     <div class="header">
         <h1>Trackium</h1>
-        <p>Birikim hedefinizi oluşturun ve dilediğiniz türdeki birikiminizi kaydedin.</p>
     </div>
 
     <div class="content">
         <p>Birikim hedefinizi oluşturun ve dilediğiniz türdeki birikiminizi kaydedin. Güncel veriler ile kâr/zarar detaylarını ve piyasa verilerini takip edin.</p>
-        <a href="#" class="btn-download">Uygulamayı İndir</a>
-    </div>
-
-    <div class="footer">
-        <span class="show-policy">Gizlilik Politikası</span> | 
-        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Kullanım Koşulları</a>
+        <a href="mailto:serdarakpinar.dev@gmail.com">serdarakpinar.dev@gmail.com</a>
     </div>
 
     <div class="policy" id="policy">
@@ -125,6 +111,11 @@
         <p>Bu mobil uygulama, kullanıcılarının gizliliğini önemsemektedir. İşbu gizlilik politikası, kullanıcılarımızın kişisel verilerinin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.</p>
         <p>Uygulamamız, kullanıcı verilerini üçüncü şahıslarla paylaşmaz ve güvenliğini sağlamak için gerekli tüm önlemleri alır.</p>
     </div>
+</div>
+
+<div class="footer">
+    <span class="show-policy">Gizlilik Politikası</span> | 
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Kullanım Koşulları</a>
 </div>
 
 <script>
