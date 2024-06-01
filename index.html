@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobil Uygulama Tanıtım Sayfası</title>
+    <title>Trackium - Mobil Uygulama</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f7f7f7;
@@ -21,25 +21,44 @@
         }
 
         .header {
-            background-color: #4CAF50;
+            background-color: #0097b2;
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         .header h1 {
             margin: 0;
+            font-size: 2.5em;
+        }
+
+        .header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
         }
 
         .content {
-            margin: 20px 0;
+            margin: 40px 0;
+            text-align: left;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.6;
         }
 
         .footer {
-            margin-top: 20px;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-top: 1px solid #ccc;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
         }
 
         .footer a {
-            color: #4CAF50;
+            color: #0097b2;
             text-decoration: none;
             margin: 0 10px;
         }
@@ -55,12 +74,31 @@
             background-color: #fff;
             padding: 20px;
             border: 1px solid #ccc;
+            border-radius: 10px;
         }
 
         .show-policy {
             cursor: pointer;
-            color: #4CAF50;
+            color: #0097b2;
             text-decoration: underline;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: #0097b2;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: background-color 0.3s;
+        }
+
+        .btn-download:hover {
+            background-color: #007a91;
         }
     </style>
 </head>
@@ -68,13 +106,13 @@
 
 <div class="container">
     <div class="header">
-        <h1>Mobil Uygulama</h1>
-        <p>En iyi mobil uygulama deneyimi</p>
+        <h1>Trackium</h1>
+        <p>Birikim hedefinizi oluşturun ve dilediğiniz türdeki birikiminizi kaydedin.</p>
     </div>
 
     <div class="content">
-        <p>Mobil uygulamamızı hemen indirin ve avantajlarından yararlanın!</p>
-        <p>İletişim: <a href="mailto:serdarakpinar.dev@gmail.com">serdarakpinar.dev@gmail.com</a></p>
+        <p>Birikim hedefinizi oluşturun ve dilediğiniz türdeki birikiminizi kaydedin. Güncel veriler ile kâr/zarar detaylarını ve piyasa verilerini takip edin.</p>
+        <a href="#" class="btn-download">Uygulamayı İndir</a>
     </div>
 
     <div class="footer">
@@ -86,7 +124,6 @@
         <h2>Gizlilik Politikası</h2>
         <p>Bu mobil uygulama, kullanıcılarının gizliliğini önemsemektedir. İşbu gizlilik politikası, kullanıcılarımızın kişisel verilerinin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.</p>
         <p>Uygulamamız, kullanıcı verilerini üçüncü şahıslarla paylaşmaz ve güvenliğini sağlamak için gerekli tüm önlemleri alır.</p>
-        <!-- Gizlilik politikası metnini buraya ekleyebilirsiniz -->
     </div>
 </div>
 
