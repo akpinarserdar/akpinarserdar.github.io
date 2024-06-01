@@ -1,1 +1,105 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobil Uygulama Tanıtım Sayfası</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .content {
+            margin: 20px 0;
+        }
+
+        .footer {
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .policy {
+            display: none;
+            text-align: left;
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .show-policy {
+            cursor: pointer;
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Mobil Uygulama</h1>
+        <p>En iyi mobil uygulama deneyimi</p>
+    </div>
+
+    <div class="content">
+        <p>Mobil uygulamamızı hemen indirin ve avantajlarından yararlanın!</p>
+        <p>İletişim: <a href="mailto:serdarakpinar.dev@gmail.com">serdarakpinar.dev@gmail.com</a></p>
+    </div>
+
+    <div class="footer">
+        <span class="show-policy">Gizlilik Politikası</span> | 
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Kullanım Koşulları</a>
+    </div>
+
+    <div class="policy" id="policy">
+        <h2>Gizlilik Politikası</h2>
+        <p>Bu mobil uygulama, kullanıcılarının gizliliğini önemsemektedir. İşbu gizlilik politikası, kullanıcılarımızın kişisel verilerinin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.</p>
+        <p>Uygulamamız, kullanıcı verilerini üçüncü şahıslarla paylaşmaz ve güvenliğini sağlamak için gerekli tüm önlemleri alır.</p>
+        <!-- Gizlilik politikası metnini buraya ekleyebilirsiniz -->
+    </div>
+</div>
+
+<script>
+    document.querySelector('.show-policy').addEventListener('click', function() {
+        var policy = document.getElementById('policy');
+        if (policy.style.display === 'none' || policy.style.display === '') {
+            policy.style.display = 'block';
+        } else {
+            policy.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
